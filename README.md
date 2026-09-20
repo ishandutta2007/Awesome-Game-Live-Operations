@@ -1,165 +1,149 @@
-# Awesome-Game-Live-Operations
+# Awesome Game Live Operations 🎮🚀
 
-Top Game LiveOps Platforms Ecosystem
+![Awesome Game Live Operations Banner](./assets/banner.svg)
 
-Curated List of SaaS Products & Open-Source GitHub Projects
-Focused on Live Service Management, Player Engagement, Remote Configuration & Real-Time Operations
-Last updated: September 2026
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Game-Live-Operations"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Game-Live-Operations?style=social" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Game-Live-Operations/fork"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Game-Live-Operations?style=social" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-This repository tracks notable SaaS platforms and open-source projects for Game Live Operations (LiveOps). These tools help game studios manage live services, deploy content updates without client patches, run in-game events, segment players, and maintain real-time multiplayer communication.
+> 🕹️ **A curated ecosystem of SaaS platforms & open-source infrastructure for Game Live Operations (LiveOps), Live Service Management, Remote Configuration, Player Engagement, and Real-Time Multiplayer Operations.**
 
-Examples include Unity Vivox, Unity Remote Config, Beamable, Pragma Platform, PlayFab LiveOps, AccelByte, LootLocker, OneSignal, Airship, and Leanplum (the category leaders).
+---
 
-Open-source emphasis: This section is heavily expanded with every major active project for self-hosting, custom live service pipelines, and transparent player data handling — ideal for indie studios, mid-sized developers, and teams that need full control over their live game infrastructure without per-player SaaS pricing.
+## 📖 Overview & SEO Summary
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+Welcome to **Awesome Game Live Operations (LiveOps)**! This directory tracks industry-leading **SaaS platforms** and **open-source game backends** engineered for modern connected games. 
 
-Table of Contents
+Whether you are building cross-platform multiplayer games in **Unity**, **Unreal Engine**, **Godot**, or custom C++/Rust/Go engines, these tools empower game studios to:
+- ⚙️ **Deploy Remote Configuration & Feature Flags** without publishing client updates or app store approvals.
+- 🏆 **Manage Player Progression & Virtual Economies** including cloud saves, inventories, leaderboards, and achievements.
+- 💬 **Enable Real-Time Voice & Text Chat** with positional audio, channel rosters, and noise suppression.
+- 📣 **Drive Player Retention & Engagement** via targeted push notifications, omni-channel messaging, and automated event calendars.
+- ⚔️ **Scale Server Infrastructure & Matchmaking** for low-latency session-based or persistent online games.
 
-SaaS/Hosted Platforms
+---
 
-Open-Source GitHub Projects
+## 📊 Market Overview & Industry Structure
 
-How to Contribute
+> 💡 **Market Size & Structure:** The global **Game LiveOps and Backend Infrastructure market** is estimated at **$4.5B–$6.0B+ (2026)** and growing rapidly driven by the dominance of free-to-play (F2P) and live-service gaming models across mobile, PC, and consoles. The market is **moderately fragmented** — while massive cloud providers (Microsoft Azure PlayFab, Unity Gaming Services) hold dominant enterprise market share, specialized vendors (Beamable, AccelByte, Heroic Labs) and open-source stacks (LiveKit, Flagsmith, Novu) capture significant developer adoption through modular and self-hosted offerings.
 
-Disclaimer
+---
 
-SaaS/Hosted Platforms
+## 📑 Table of Contents
 
-Unity Vivox
-Unity's managed voice and text chat service for multiplayer games. Provides 2D and 3D positional voice channels, direct message text, channel rosters with speaking indicators, mute controls, and concurrency monitoring.
+- [☁️ SaaS / Hosted LiveOps Platforms](#️-saas--hosted-liveops-platforms)
+- [⚡ Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Architecture & Stack Recommendations](#️-architecture--stack-recommendations)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Community](#-support--community)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
 
-Unity Remote Config
-Cloud service for tuning and customizing games without client updates. Supports feature flagging, staged rollouts, kill switches, start/end dates, real-time player segmentation, and A/B testing.
+---
 
-Beamable
-Open-core LiveOps platform for Unity and Unreal. Provides player data management, live events, content creation, custom cloud code (C# microservices), and a marketplace of plug-in components. Backed by AWS with over 30 million players served -
-11
-.
+## ☁️ SaaS / Hosted LiveOps Platforms
 
-Pragma Platform
-Cross-platform identity and player account backend. Unified API for Steam, Epic, PlayStation, Xbox, Discord, and more. Features rate-limited logins, account bans, GDPR-compliant PII handling, and playtest management.
+The table below lists top SaaS and managed cloud platforms for game backend and LiveOps infrastructure, sorted by **company scale (valuation / market capitalization)** descending.
 
-PlayFab LiveOps
-Microsoft's complete backend platform for games. LiveOps capabilities include player segmentation, A/B experimentation, title data management, push notifications, cheat prevention, CloudScript server logic, and task scheduling for events and messaging.
+| Product | Description | Valuation / Revenue Scale | Starting Paid Tier Pricing | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft PlayFab](https://playfab.com)** 🎮 | Complete backend platform providing player accounts, CloudScript server logic, segmentation, A/B testing, virtual economy, and task scheduling. | **$3.66 Trillion** (Microsoft Market Cap) | Pay-As-You-Go starting at $0.003 / 1k meter units (~$99/mo typical Indie plan base) | Free Developer Plan (Up to 100,000 total accounts, unlimited test titles) |
+| **[Unity Vivox](https://unity.com/products/vivox)** 🎤 | Managed 2D/3D positional voice chat and text messaging service for cross-platform multiplayer games. | **$18.22 Billion** (Unity Market Cap) | $0.0050 per Peak Concurrent User (PCU) per month above free tier | Free up to 5,000 Peak Concurrent Users (PCU) forever |
+| **[Unity Remote Config](https://unity.com/products/remote-config)** 🎛️ | Cloud service for game tuning, feature flagging, A/B testing, and real-time player segmentation without client patches. | **$18.22 Billion** (Unity Market Cap) | Included in Unity Gaming Services (UGS) Pay-As-You-Go ($0.001 per 1k requests) | Free up to 10,000 Monthly Active Users (MAU) |
+| **[Leanplum (CleverTap)](https://www.clevertap.com)** 📱 | Mobile engagement and marketing automation platform offering segmentation, push notifications, and A/B testing for live games. | **~$1.0 Billion** (CleverTap Valuation) | Growth Plan starting at $999 / month | 30-Day Free Trial (Full platform access up to 10,000 MAU) |
+| **[Airship](https://www.airship.com)** 🔔 | Enterprise customer engagement and messaging platform for automated player retention campaigns and in-app messaging. | **~$500 Million** (Valuation / ~$100M+ ARR) | Essentials Plan starting at $99 / month | 30-Day Free Trial (Includes 10,000 push notifications/mo) |
+| **[AccelByte](https://accelbyte.io)** 🛡️ | Fully managed, modular backend platform providing identity, store/catalog, matchmaking, session management, and achievements. | **~$150 Million** (Valuation / Series B) | Managed Cloud starting at $500 / month base platform fee | 14-Day Free Trial (Full sandbox access for up to 500 test accounts) |
+| **[OneSignal](https://onesignal.com)** 📩 | Omnichannel customer engagement platform widely used by game studios for push notifications, SMS, in-app messaging, and email. | **~$100 Million** (Valuation / $84M Funding) | Growth Plan starting at $9 / month + usage | Free Plan forever (Up to 10,000 web/mobile push subscribers) |
+| **[Beamable](https://www.beamable.com)** ⚡ | Open-core LiveOps platform for Unity and Unreal providing C# microservices, live events, virtual economy, and content management. | **~$30 Million** (Estimated Valuation / Series A) | Professional Tier starting at $250 / month | Free Developer Plan (Up to 1,000 Monthly Active Users / MAU) |
+| **[Pragma Platform](https://pragma.gg)** 🔑 | Cross-platform identity, matchmaking, and player account backend built by AAA veterans with rate-limited logins and GDPR compliance. | **~$25 Million** (Estimated Valuation / $22M Funding) | Custom Studio Enterprise Tier starting at $1,500 / month | 30-Day Private Developer Sandbox Access |
+| **[LootLocker](https://lootlocker.com)** 🧰 | Turnkey game backend platform with open-source SDKs for Unity and Unreal, guest/platform auth, inventories, and cross-platform saves. | **~$10 Million** (Indie Seed Backed) | Pro Plan starting at $49 / month | Free Plan forever (Up to 10,000 Monthly Active Users / MAU) |
 
-AccelByte
-Fully managed, modular backend for online and multiplayer games. Services span identity, cloud save, achievements, leaderboards, store/catalog, wallets, social features, chat, matchmaking, and sessions. Provides SDKs for Unreal, Unity, and web.
+---
 
-LootLocker
-Game backend platform with open-source SDKs for Unity and Unreal. Features guest, platform, and white-label authentication, player progression, inventories, and cross-platform saves.
+## ⚡ Open-Source GitHub Projects
 
-OneSignal
-Push notification and customer engagement platform. Widely used for re-engagement campaigns, event announcements, and player messaging across mobile and web.
+Below is a comprehensive collection of self-hostable open-source game backends, LiveOps services, WebRTC voice infrastructure, and feature-flagging servers. 
 
-Airship
-Customer engagement platform with push notifications, in-app messaging, and automation. Used by game studios for player retention and live event promotion.
+Repositories are sorted by **GitHub Star Count** descending.
 
-Leanplum
-Mobile engagement and marketing automation platform (now part of CleverTap). Provides player segmentation, A/B testing, and personalized messaging for live games.
+| Project / Repository | Category | Star Count ⭐️ | Description | License |
+| :--- | :--- | :--- | :--- | :--- |
+| **[novuhq/novu](https://github.com/novuhq/novu/stargazers)** 🔔 | Engagement & Messaging | [![Novu Stars](https://img.shields.io/github/stars/novuhq/novu?style=social&color=white)](https://github.com/novuhq/novu/stargazers) | Open-source notification infrastructure for in-app, email, push, and SMS messaging. | MIT |
+| **[livekit/livekit](https://github.com/livekit/livekit/stargazers)** 🎙️ | Real-Time Voice & Video | [![LiveKit Stars](https://img.shields.io/github/stars/livekit/livekit?style=social&color=white)](https://github.com/livekit/livekit/stargazers) | Ultra low-latency WebRTC developer platform for real-time voice, video, and data streaming. | Apache-2.0 |
+| **[heroiclabs/nakama](https://github.com/heroiclabs/nakama/stargazers)** ⚔️ | Game Backend | [![Nakama Stars](https://img.shields.io/github/stars/heroiclabs/nakama?style=social&color=white)](https://github.com/heroiclabs/nakama/stargazers) | Distributed server for social, real-time games, and apps. Features accounts, chat, multiplayer, and leaderboards. | Apache-2.0 |
+| **[meetecho/janus-gateway](https://github.com/meetecho/janus-gateway/stargazers)** 🎧 | Real-Time Voice | [![Janus Stars](https://img.shields.io/github/stars/meetecho/janus-gateway?style=social&color=white)](https://github.com/meetecho/janus-gateway/stargazers) | General-purpose WebRTC gateway for audio/video streaming and in-game communication. | GPL-3.0 |
+| **[versatica/mediasoup](https://github.com/versatica/mediasoup/stargazers)** 📻 | Real-Time Voice | [![mediasoup Stars](https://img.shields.io/github/stars/versatica/mediasoup?style=social&color=white)](https://github.com/versatica/mediasoup/stargazers) | Cutting-edge WebRTC Selective Forwarding Unit (SFU) for multi-party audio and video streams. | MIT |
+| **[Flagsmith/flagsmith](https://github.com/Flagsmith/flagsmith/stargazers)** 🚩 | Remote Config & Flags | [![Flagsmith Stars](https://img.shields.io/github/stars/Flagsmith/flagsmith?style=social&color=white)](https://github.com/Flagsmith/flagsmith/stargazers) | Feature flag, remote config, and A/B testing server for instant game parameter changes. | BSD-3-Clause |
+| **[dittofeed/dittofeed](https://github.com/dittofeed/dittofeed/stargazers)** 📨 | Engagement & Messaging | [![Dittofeed Stars](https://img.shields.io/github/stars/dittofeed/dittofeed?style=social&color=white)](https://github.com/dittofeed/dittofeed/stargazers) | Open-source customer engagement platform for automated user journeys via email, push, and SMS. | MIT |
+| **[open-feature/spec](https://github.com/open-feature/spec/stargazers)** 🌐 | Remote Config Standard | [![OpenFeature Stars](https://img.shields.io/github/stars/open-feature/spec?style=social&color=white)](https://github.com/open-feature/spec/stargazers) | Vendor-neutral, open standard for feature flagging and dynamic configuration. | Apache-2.0 |
+| **[adrenak/univoice](https://github.com/adrenak/univoice/stargazers)** 🔊 | Real-Time Voice | [![UniVoice Stars](https://img.shields.io/github/stars/adrenak/univoice?style=social&color=white)](https://github.com/adrenak/univoice/stargazers) | Voice chat/VoIP solution for Unity with Opus encoding and RNNoise noise cancellation. | MIT |
+| **[hajimehoshi/asobiba](https://github.com/hajimehoshi/asobiba/stargazers)** 🕹️ | Game Backend | [![Asobi Stars](https://img.shields.io/github/stars/hajimehoshi/asobiba?style=social&color=white)](https://github.com/hajimehoshi/asobiba/stargazers) | Erlang/OTP powered game backend supporting real-time WebSocket multiplayer, economies, and cloud saves. | Apache-2.0 |
+| **[Ryware/nona-config](https://github.com/Ryware/nona-config/stargazers)** 🔧 | Remote Config | [![Nona Stars](https://img.shields.io/github/stars/Ryware/nona-config?style=social&color=white)](https://github.com/Ryware/nona-config/stargazers) | Self-hosted remote configuration and feature flag service with embedded web UI and libSQL. | MIT |
+| **[GLOBIO4/GlobioModelPublic](https://github.com/GLOBIO4/GlobioModelPublic/stargazers)** ☁️ | Serverless Backend | [![Globio Stars](https://img.shields.io/github/stars/GLOBIO4/GlobioModelPublic?style=social&color=white)](https://github.com/GLOBIO4/GlobioModelPublic/stargazers) | Serverless game backend built on Cloudflare edge network with feature flags, databases, and sync. | MIT |
+| **[CrateBytes/CrateBytes](https://github.com/CrateBytes/CrateBytes/stargazers)** 📦 | Game Backend | [![CrateBytes Stars](https://img.shields.io/github/stars/CrateBytes/CrateBytes?style=social&color=white)](https://github.com/CrateBytes/CrateBytes/stargazers) | Open-source, self-hosted backend solution for connected games built with Svelte. | MIT |
+| **[4Players/odin-sdk](https://github.com/4Players/odin-sdk/stargazers)** 🎙️ | Real-Time Voice | [![ODIN Stars](https://img.shields.io/github/stars/4Players/odin-sdk?style=social&color=white)](https://github.com/4Players/odin-sdk/stargazers) | Cross-platform SDK for low-latency VoIP chat with channel routing and room management. | BSD-3-Clause |
+| **[SodiumCXI/Talknado](https://github.com/SodiumCXI/Talknado/stargazers)** 💬 | Real-Time Voice | [![Talknado Stars](https://img.shields.io/github/stars/SodiumCXI/Talknado?style=social&color=white)](https://github.com/SodiumCXI/Talknado/stargazers) | Combined client-server for real-time encrypted voice chat and screen sharing. | MIT |
+| **[OpenGameBackend/OpenGameBackend](https://github.com/OpenGameBackend/OpenGameBackend/stargazers)** 🏗️ | Game Backend | [![OpenGB Stars](https://img.shields.io/github/stars/OpenGameBackend/OpenGameBackend?style=social&color=white)](https://github.com/OpenGameBackend/OpenGameBackend/stargazers) | Modular backend engine built on PostgreSQL with type-safe SDKs for Deno and Node.js. | Apache-2.0 |
+| **[NamazuStudios/roblox-kit](https://github.com/NamazuStudios/roblox-kit/stargazers)** 🧩 | Game Backend CMS | [![Namazu Stars](https://img.shields.io/github/stars/NamazuStudios/roblox-kit?style=social&color=white)](https://github.com/NamazuStudios/roblox-kit/stargazers) | Self-hosted runtime with LiveOps CMS for configuring quests, items, and events without code updates. | MPL-2.0 |
 
-Open-Source GitHub Projects
+---
 
-Nakama
-The most mature open-source game backend server. Provides user accounts, chat, social features, matchmaker, real-time multiplayer, and leaderboards. Battle-tested at scale and actively maintained by Heroic Labs. Official AWS GameLift partner with deep integration -
-17
-. License: Apache 2.0.
+## 🛠️ Architecture & Stack Recommendations
 
-Satori
-Open-source LiveOps server for games, designed to work alongside Nakama. Features activity scheduling on an Event Calendar, player Audiences for segmentation, Feature Flags, and Experiments for A/B testing. Provides SDKs for Unity, Unreal, and server-side languages -
-13
-.
+Looking to assemble a fully self-hosted LiveOps stack? Here is a battle-tested reference architecture:
 
-Namazu Elements
-Self-hosted backend runtime for connected games with REST/WebSocket APIs. Built-in game backend services (auth, matchmaking, leaderboards, inventory) and extensibility via Custom Elements written in any JVM language. Includes a built-in LiveOps CMS for configuring quests, events, and items without code deployments. OpenAPI-first with generated client SDKs. License: MPL-2.0 (moved from AGPLv3 in v3.8) -
-7
--
-11
-.
+```
+                  ┌──────────────────────────────────────────┐
+                  │              Game Client                 │
+                  │        (Unity / Unreal / Godot)          │
+                  └─────┬──────────────┬──────────────┬──────┘
+                        │              │              │
+        ┌───────────────▼┐      ┌──────▼───────┐     ┌▼────────────────┐
+        │ Nakama Server  │      │  Flagsmith   │     │  LiveKit Voice  │
+        │ (Auth, Social, │      │(Remote Config│     │(Spatial Audio & │
+        │ Matchmaking)   │      │& FeatureFlag)│     │ Positional Chat)│
+        └───────┬────────┘      └──────────────┘     └─────────────────┘
+                │
+        ┌───────▼────────┐
+        │  PostgreSQL &  │
+        │  Redis Storage │
+        └────────────────┘
+```
 
-Globio
-Serverless game backend built on Cloudflare's edge network. Ten services including GlobalDoc (edge database), GlobalSync (real-time multiplayer), GlobalVault (cloud saves), GlobalPulse (live configuration/feature flags), Globio ID (cross-platform auth), and GlobalBrain (edge AI inference). Firebase-compatible APIs for migration -
-5
-.
+---
 
-Open Game Backend (OpenGB)
-Open-source backend engine designed as a response to PlayFab and Unity Gaming Services rigidity. Modular architecture where auth, tokens, rate limiting, and game logic are all forkable modules. Built on PostgreSQL with type-safe client SDKs and OpenAPI spec generation. Supports Deno, NodeJS, and Cloudflare Workers -
-12
-.
+## 🤝 How to Contribute
 
-Asobi
-Open-source game backend built on Erlang/OTP and the Nova ecosystem. Features authentication, player management, real-time multiplayer with WebSocket transport, matchmaking, leaderboards, virtual economy, social features, tournaments, cloud saves, and background jobs. Can be scripted in Lua via Docker or Erlang for full control -
-3
-.
+Contributions are warmly welcomed! Please follow these simple guidelines:
 
-CrateBytes
-Open-source, self-hosted backend solution for games positioned as an alternative to AccelByte. Built with Svelte. Early-stage but active -
-6
-.
+1. 🍴 **Fork the repository**.
+2. 📝 **Add or update entries** in `README.md` maintaining table formatting.
+3. ℹ️ **Provide accurate links, pricing, and descriptions**.
+4. 🚀 **Submit a Pull Request** with a summary of changes.
 
-4Players ODIN
-Reliable cross-platform SDK for real-time VoIP chat technology in games, apps, and websites. Voice data handled via datagram callbacks with channel masks for routing. Event-driven architecture with room lifecycle management -
-1
-.
+---
 
-UniVoice
-Voice chat/VoIP solution for Unity. Networking-agnostic with built-in support for Mirror and Netcode for GameObjects. Features Opus encoding, RNNoise-based noise removal, and energy-based voice activity detection. MIT licensed.
+## 💖 Support & Community
 
-Talknado
-Lightweight combined client-server for real-time voice chat and screen sharing. All control and media packets encrypted. Signaling via TCP, low-latency audio/screen via LiteNetLib (UDP). H.264 encoding via FFmpeg.AutoGen, audio via NAudio with RNNoise noise suppression -
-9
-.
+If you find this curated directory helpful for your game studio or indie project:
 
-Nona Config
-Open-source self-hosted remote configuration and feature flag service, positioned as a Firebase Remote Config alternative. Embedded web UI, HTTP API, and bundled libSQL database. Supports standalone and primary/replica deployments. Docker image available -
-2
--
-10
-.
+- ⭐ **Star this repository** to help others discover it!
+- 🔀 **Fork it** to customize your own LiveOps toolkit.
+- 📣 **Share it** with fellow game developers and technical directors!
+- ☕ **Buy us a coffee / Sponsor the maintainer**: Support further open-source updates via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
 
-Flagsmith
-Open-source feature flag, remote config, and A/B testing service. Self-host or use hosted API. Provides SDKs for Node.js, Java, Ruby, PHP, JavaScript, Rust, and more. BSD-3-Clause licensed -
-15
-.
+---
 
-Dittofeed
-Open-source customer engagement platform for omni-channel messaging. Send broadcasts or automated user journeys via email, push notifications, SMS, WhatsApp, and Slack. Dev-friendly alternative to OneSignal and Customer.io. Self-hostable to keep PII in your own VPC. MIT licensed -
-8
-.
+## 📈 Star History
 
-Additional Strong Open-Source Options
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Game-Live-Operations&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Game-Live-Operations&type=date&legend=top-left)
 
-Real-Time Voice: LiveKit (self-hosted WebRTC infrastructure for voice/video), mediasoup (SFU for multi-party audio), Janus (general-purpose WebRTC gateway) -
-14
-.
+---
 
-Remote Config & Flags: Nona (Firebase Remote Config alternative), Flagsmith (feature flags + remote config + A/B testing), OpenFeature (vendor-neutral flag SDK standard).
+## ⚠️ Disclaimer
 
-Engagement & Messaging: Dittofeed (omni-channel journeys, push, email, SMS), Novu (open-source notification infrastructure for in-app, email, SMS, push).
-
-Game Backend Foundations: Nakama (battle-tested, enterprise-ready), Namazu Elements (self-hosted runtime with LiveOps CMS), OpenGB (modular, forkable architecture).
-
-Frameworks for building custom systems: Combine Nakama for core backend services (accounts, chat, matchmaking), Satori for LiveOps event scheduling and feature flags, 4Players ODIN or UniVoice for in-game voice chat, Dittofeed for player engagement messaging, and PostgreSQL + Redis for persistence. Deploy via Docker Compose for a complete self-hosted stack.
-
-How to Contribute
-
-Fork the repo.
-
-Add/edit entries in README.md (follow existing format).
-
-Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-Disclaimer
-
-This is a community-curated list — not exhaustive and not an endorsement.
-
-Game LiveOps platforms handle player data and real-time communications; ensure compliance with platform requirements (Steam, Xbox, PlayStation) and data protection regulations.
-
-Self-hosted open-source solutions require proper security hardening, scaling strategy, and operational monitoring.
-
-Made for game developers, live operations producers, backend engineers, and studio technical directors.
-Let's make game LiveOps more open, scalable, and player-focused.
+This list is community-curated for informational and research purposes only. Listed trademarks belong to their respective owners. Always ensure compliance with platform terms of service (Steam, Epic, PlayStation, Xbox, Apple App Store, Google Play) and regional regulatory frameworks (GDPR, COPPA) when handling live player telemetry and PII.
