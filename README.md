@@ -68,9 +68,9 @@ The table below lists top SaaS and managed cloud platforms for game backend and 
 
 Below is a comprehensive collection of self-hostable open-source game backends, LiveOps services, WebRTC voice infrastructure, and feature-flagging servers. 
 
-Repositories are sorted by **GitHub Star Count** descending.
+Repositories are sorted by **GitHub Stars_Count** descending.
 
-| Project / Repository | Category | Star Count ⭐️ | Description | License |
+| Project / Repository | Category | Stars_Count ⭐️ | Description | License |
 | :--- | :--- | :--- | :--- | :--- |
 | **[novuhq/novu](https://github.com/novuhq/novu/stargazers)** 🔔 | Engagement & Messaging | [![Novu Stars](https://img.shields.io/github/stars/novuhq/novu?style=social&color=white)](https://github.com/novuhq/novu/stargazers) | Open-source notification infrastructure for in-app, email, push, and SMS messaging. | MIT |
 | **[livekit/livekit](https://github.com/livekit/livekit/stargazers)** 🎙️ | Real-Time Voice & Video | [![LiveKit Stars](https://img.shields.io/github/stars/livekit/livekit?style=social&color=white)](https://github.com/livekit/livekit/stargazers) | Ultra low-latency WebRTC developer platform for real-time voice, video, and data streaming. | Apache-2.0 |
